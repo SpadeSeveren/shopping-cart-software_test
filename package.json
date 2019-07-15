@@ -1,0 +1,15 @@
+{
+  "name": "shopping-cart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:gSchool/tdd-shopping-cart.git",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha --recursive test/*.test.js"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
+  },
+  "dependencies": {}
+}
