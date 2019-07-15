@@ -12,7 +12,7 @@ module.exports = class Cart {
   }
 
   addItem(item, quantity) {
-    if (item.price >= 0) {
+    if (!isNaN(item.price) && item.price >= 0 && typeof item.name === 'string' && typeof item.onSale === 'boolean') {
       let flag = false;
       this.items.some(e => {
         if (e.product === item) {
